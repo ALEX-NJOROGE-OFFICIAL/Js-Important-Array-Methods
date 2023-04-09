@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+//array some method that returns true or false if it finds what you are looking for inside the original array
+const items = [
+  
+{name: 'bike', price: 100},
+{name: 'chair', price:40},
+{name:'pen', price:10},
+{name:'phone', price:1000},
+{name:'mouse', price:80},
+{name:'book', price:300},
+{name:'bottle', price:600}
+]
+
+ const inexpensiveitems =items.some((item) =>{
+  return item.name === 'jacket'
+})
+console.log(inexpensiveitems)
+
+
+//array filter method that filters what specific data you want out of the original array
+const objects= [
+  
+{name: 'bike', price: 100},
+{name: 'chair', price:40},
+{name:'pen', price:10},
+{name:'phone', price:1000},
+{name:'mouse', price:80},
+{name:'book', price:300},
+{name:'bottle', price:600}
+]
+
+ const objectsname =items.filter((item) =>{
+  return item.price >= 300
+})
+console.log(objectsname)
+
+// array method for mapping. creates a new array after performing an action. In this case, I have asked to create an array with all the prices alone
+const stationery= [
+  
+{name: 'bike', price: 100},
+{name: 'chair', price:40},
+{name:'pen', price:10},
+{name:'phone', price:1000},
+{name:'mouse', price:80},
+{name:'book', price:300},
+{name:'bottle', price:600}
+]
+
+ const stationerynames =items.map((item) =>{
+  return item.price
+})
+console.log(stationerynames)
+
+
+//array find method that finds whatever you want inside the array
+
+const property= [
+  
+{name: 'bike', price: 1000},
+{name: 'chair', price:40},
+{name:'pen', price:10},
+{name:'phone', price:1000},
+{name:'mouse', price:80},
+{name:'book', price:300},
+{name:'bottle', price:600}
+]
+
+ const propertynames =items.find((item) =>{
+  return item.price == 1000
+})
+console.log(propertynames)
+
+//forEach method that works like a forloop
+const things= [
+  
+{name: 'bike', price: 1000},
+{name: 'chair', price:40},
+{name:'pen', price:10},
+{name:'phone', price:1000},
+{name:'mouse', price:80},
+{name:'book', price:300},
+{name:'bottle', price:600}
+]
+
+things= items.forEach((item) =>{
+console.log(item.name)
+
+})
+
+const itemss= [
+  
+{name: 'bike', price: 1000},
+{name: 'chair', price:40},
+{name:'pen', price:10},
+{name:'phone', price:1000},
+{name:'mouse', price:80},
+{name:'book', price:300},
+{name:'bottle', price:600}
+]
+
+const expensiveitems = itemss.every((item) =>{
+return itemss.price >= 300
+})
+console.log(expensiveitems)
+
+
+  </script>
+</body>
+</html>
